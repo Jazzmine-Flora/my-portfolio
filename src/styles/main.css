@@ -1,0 +1,38 @@
+body {
+  margin: 0;
+  font-family: "Pacifico", cursive, Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+nav {
+  margin: 10px 0;
+}
+
+main {
+  padding: 20px;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
+
+h1,
+h2,
+h3 {
+  color: #d72660;
+}
