@@ -6,7 +6,7 @@ import './Footer.css';
 const Footer: React.FC = () => {
     return (
         <footer className="footer">
-            <p>&copy; {new Date().getFullYear()} My Portfolio. All rights reserved.</p>
+            <p>&copy; {new Date().getFullYear()} Taliba Sadiq's Portfolio. All rights reserved.</p>
             <div className="social-links">
                 <a href="https://www.linkedin.com/in/taliba-sadiq" target="_blank" rel="noopener noreferrer">
                     <img className='icon' src={linkedinIcon} alt="LinkedIn"/>

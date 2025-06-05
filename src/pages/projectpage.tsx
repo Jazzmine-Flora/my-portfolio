@@ -1,7 +1,20 @@
 import React from "react";
 
 const projects = [
-  {
+ 
+    {
+        title: "Portfolio Website",
+        description: "My personal portfolio showcasing my projects and skills.",
+        link: "https://github.com/Jazzmine-Flora/my-portfolio",
+        tech: ["React", "TypeScript", "JavaScript", "CSS"],
+    },
+    {
+        title: "What to Wear App (WTWR)",
+        description: "A simple weather application that fetches data from a public API.",
+        link: "https://github.com/Jazzmine-Flora/se_project_react",
+        tech: ["React", "JavaScript", "CSS", "API", "Weather API", "MongoDB", "Node.js", "Express", "Postman"],
+    }, 
+    {
     title: "Expense Tracker",
     description: "A simple app to track your daily expenses with charts and categories.",
     link: "https://jazzmine-flora.github.io/expense-tracker/",
@@ -13,6 +26,12 @@ const projects = [
     link: "https://github.com/Jazzmine-Flora/Girly-Blogspot",
     tech: ["React", "Node.js", "Express", "MongoDB", "JavaScript", "CSS"],
   },
+    // {
+    //     title: "To-Do List",
+    //     description: "A basic to-do list application to manage tasks efficiently.",
+    //     link: "https://jazzmine-flora.github.io/todo-list/",
+    //     tech: ["React", "JavaScript", "CSS"],
+    // },
   // Add more projects here as you build them!
 ];
 
