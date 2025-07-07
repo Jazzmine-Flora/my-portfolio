@@ -10,13 +10,13 @@ const projects = [
     {
         title: "Portfolio Website",
         description: "My personal portfolio showcasing my projects and skills.",
-        link: "https://github.com/Jazzmine-Flora/my-portfolio",
+        link: "https://jazzmine-flora.github.io/my-portfolio/",
         tech: ["React", "TypeScript", "JavaScript", "CSS"],
     },
     {
         title: "What to Wear App (WTWR)",
         description: "A simple weather application that fetches data from a public API.",
-        link: "https://github.com/Jazzmine-Flora/se_project_react",
+        link: "https://www.wat2wear.twilightparadox.com/",
         tech: ["React", "JavaScript", "CSS", "API", "Weather API", "MongoDB", "Node.js", "Express", "Postman"],
     }, 
     {
