@@ -1,7 +1,12 @@
 import React from "react";
 
 const projects = [
- 
+ {
+        title: "News Explorer",
+        description: "A full-stack news application that allows users to search, save, and manage news articles from various sources.",
+        link: "https://jazzmine-flora.github.io/final-project-frontend/",
+        tech: ["React", "JavaScript", "CSS", "Node.js", "Express", "MongoDB", "API", "News API"],
+    },
     {
         title: "Portfolio Website",
         description: "My personal portfolio showcasing my projects and skills.",
@@ -26,12 +31,7 @@ const projects = [
     link: "https://github.com/Jazzmine-Flora/Girly-Blogspot",
     tech: ["React", "Node.js", "Express", "MongoDB", "JavaScript", "CSS"],
   },
-{
-        title: "News Explorer",
-        description: "A full-stack news application that allows users to search, save, and manage news articles from various sources.",
-        link: "https://jazzmine-flora.github.io/final-project-frontend/",
-        tech: ["React", "JavaScript", "CSS", "Node.js", "Express", "MongoDB", "API", "News API"],
-    }
+
   
 ];
 
