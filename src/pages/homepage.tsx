@@ -21,7 +21,7 @@ const HomePage: React.FC = () => (
         Taliba Sadiq
       </h1>
       <h2 style={{ color: "#d72660", fontWeight: 400, marginTop: 0 }}>
-        Front-End Developer & Blogger
+        Front-End Developer & Animator
       </h2>
       <p style={{ maxWidth: 500, margin: "20px auto", color: "#555" }}>
         Hi! I’m Taliba, a passionate front-end developer who loves building beautiful, user-friendly web experiences. I enjoy working with React, TypeScript, JavaScript, and CSS, and I’m always learning new things. Welcome to my portfolio!

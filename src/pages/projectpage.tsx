@@ -26,13 +26,13 @@ const projects = [
     link: "https://github.com/Jazzmine-Flora/Girly-Blogspot",
     tech: ["React", "Node.js", "Express", "MongoDB", "JavaScript", "CSS"],
   },
-    // {
-    //     title: "To-Do List",
-    //     description: "A basic to-do list application to manage tasks efficiently.",
-    //     link: "https://jazzmine-flora.github.io/todo-list/",
-    //     tech: ["React", "JavaScript", "CSS"],
-    // },
-  // Add more projects here as you build them!
+{
+        title: "News Explorer",
+        description: "A full-stack news application that allows users to search, save, and manage news articles from various sources.",
+        link: "https://jazzmine-flora.github.io/final-project-frontend/",
+        tech: ["React", "JavaScript", "CSS", "Node.js", "Express", "MongoDB", "API", "News API"],
+    }
+  
 ];
 
 const ProjectPage: React.FC = () => (
