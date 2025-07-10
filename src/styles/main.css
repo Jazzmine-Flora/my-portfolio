@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  font-family: "Pacifico", cursive, Arial, sans-serif;
+  font-family: "Quicksand", Arial, sans-serif;
   background-color: #f4f4f4;
   color: #333;
 }
@@ -33,6 +33,8 @@ main {
 
 h1,
 h2,
-h3 {
-  color: #d72660;
+h3,
+.site-title {
+  font-family: "Montserrat", "Quicksand", Arial, sans-serif;
+  color: #ff6f61; /* coral */
 }
