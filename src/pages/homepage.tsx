@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { GitHubIcon, LinkedInIcon } from "../components/SocialIcons";
 import profilePic from "../assets/profile.png";
 import "../styles/main.css";
 
@@ -38,7 +39,8 @@ const HomePage: React.FC = () => (
               className="hero__social-link"
               aria-label="GitHub"
             >
-              GitHub
+              <GitHubIcon className="hero__social-icon" title="GitHub" />
+              <span>GitHub</span>
             </a>
             <a
               href="https://www.linkedin.com/in/taliba-sadiq"
@@ -47,7 +49,8 @@ const HomePage: React.FC = () => (
               className="hero__social-link"
               aria-label="LinkedIn"
             >
-              LinkedIn
+              <LinkedInIcon className="hero__social-icon" title="LinkedIn" />
+              <span>LinkedIn</span>
             </a>
           </div>
         </div>

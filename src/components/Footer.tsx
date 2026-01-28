@@ -1,6 +1,5 @@
 import React from "react";
-import githubIcon from "../assets/social.png";
-import linkedinIcon from "../assets/linkedin.png";
+import { GitHubIcon, LinkedInIcon } from "./SocialIcons";
 import "./Footer.css";
 
 const Footer: React.FC = () => (
@@ -17,7 +16,7 @@ const Footer: React.FC = () => (
           className="footer__link"
           aria-label="LinkedIn"
         >
-          <img className="footer__icon" src={linkedinIcon} alt="" />
+          <LinkedInIcon className="footer__icon" title="LinkedIn" />
           <span>LinkedIn</span>
         </a>
         <a
@@ -27,7 +26,7 @@ const Footer: React.FC = () => (
           className="footer__link"
           aria-label="GitHub"
         >
-          <img className="footer__icon" src={githubIcon} alt="" />
+          <GitHubIcon className="footer__icon" title="GitHub" />
           <span>GitHub</span>
         </a>
       </div>

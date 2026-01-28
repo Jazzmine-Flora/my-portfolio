@@ -1,17 +1,21 @@
 /* ===== Modern Portfolio Design System ===== */
 :root {
-  /* Colors - sophisticated dark theme with coral accent */
-  --bg: #0a0e14;
-  --bg-elevated: #0f1419;
-  --surface: #161b22;
-  --surface-hover: #1c2128;
-  --border: #30363d;
-  --text: #e6edf3;
-  --text-muted: #8b949e;
-  --accent: #f78166;
-  --accent-soft: rgba(247, 129, 102, 0.15);
-  --accent-glow: rgba(247, 129, 102, 0.35);
-  --success: #3fb950;
+  /* Colors — modern “girl developer” theme (blush + lilac, clean + pro) */
+  --bg: #fff7fb; /* soft blush */
+  --bg-elevated: #ffffff;
+  --surface: #ffffff;
+  --surface-hover: #fff0f7;
+  --border: rgba(17, 24, 39, 0.10);
+  --text: #111827; /* slate-900 */
+  --text-muted: #6b7280; /* slate-500 */
+
+  /* Accent (lilac) + secondary accent (rose) */
+  --accent: #7c3aed; /* violet-600 */
+  --accent-2: #ec4899; /* pink-500 */
+  --accent-soft: rgba(124, 58, 237, 0.12);
+  --accent-glow: rgba(236, 72, 153, 0.22);
+
+  --success: #16a34a;
   --white: #ffffff;
 
   /* Typography */
@@ -62,7 +66,10 @@ body {
   font-family: var(--font-body);
   font-size: 1rem;
   line-height: 1.6;
-  background: var(--bg);
+  background:
+    radial-gradient(900px 500px at 10% 0%, rgba(236, 72, 153, 0.12), transparent 60%),
+    radial-gradient(900px 500px at 90% 10%, rgba(124, 58, 237, 0.12), transparent 55%),
+    var(--bg);
   color: var(--text);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -272,8 +279,17 @@ p:last-child {
 }
 
 .hero__social-link {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-sm);
   font-weight: 500;
   color: var(--text-muted) !important;
+}
+
+.hero__social-icon {
+  width: 18px;
+  height: 18px;
+  flex: 0 0 auto;
 }
 
 .hero__social-link:hover {
