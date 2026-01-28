@@ -1,43 +1,78 @@
-/* Header styles */
 .header {
-  background: linear-gradient(90deg, #ffd1dc 0%, #ffe4ec 100%);
-  color: #d72660;
-  padding: 24px 0 12px 0;
-  text-align: center;
-  border-bottom: 2px solid #f8bbd0;
-  box-shadow: 0 2px 8px #ffd1dc55;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: rgba(10, 14, 20, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--border);
+  transition: background var(--duration), border-color var(--duration);
 }
 
-.site-title {
-  font-family: "Pacifico", cursive, Arial, sans-serif;
-  font-size: 2.2rem;
-  margin: 0;
-  letter-spacing: 2px;
-}
-
-.navigation ul {
-  list-style: none;
-  padding: 0;
-  margin: 16px 0 0 0;
+.header__inner {
   display: flex;
-  justify-content: center;
-  gap: 24px;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--space-md) var(--space-lg);
+  gap: var(--space-lg);
 }
 
-.navigation a {
-  color: #d72660;
-  background: #fff0f6;
-  padding: 8px 18px;
-  border-radius: 20px;
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 1.05rem;
-  transition: background 0.2s, color 0.2s, box-shadow 0.2s;
-  box-shadow: 0 2px 8px #ffd1dc33;
+.header__brand {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 1.25rem;
+  color: var(--text) !important;
+  letter-spacing: -0.02em;
 }
 
-.navigation a:hover {
-  background: #ffd1dc;
-  color: #fff;
-  box-shadow: 0 4px 12px #ffd1dc77;
+.header__brand:hover {
+  color: var(--accent) !important;
+  opacity: 1;
+}
+
+.header__nav {
+  display: flex;
+  align-items: center;
+}
+
+.header__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  gap: var(--space-xs);
+}
+
+.header__link {
+  display: inline-block;
+  padding: var(--space-sm) var(--space-md);
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: var(--text-muted) !important;
+  border-radius: var(--radius-sm);
+  transition: color var(--duration-fast), background var(--duration-fast);
+}
+
+.header__link:hover {
+  color: var(--text) !important;
+  background: var(--surface-hover);
+}
+
+.header__link--active {
+  color: var(--accent) !important;
+  background: var(--accent-soft);
+}
+
+@media (max-width: 640px) {
+  .header__inner {
+    flex-direction: column;
+    align-items: stretch;
+    text-align: center;
+  }
+
+  .header__list {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
 }
