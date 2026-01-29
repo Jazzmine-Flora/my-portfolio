@@ -1,21 +1,40 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import './Header.css';
+import React from "react";
+import { Link, useLocation } from "react-router-dom";
+import "./Header.css";
+
+const navItems = [
+  { path: "/", label: "Home" },
+  { path: "/projects", label: "Projects" },
+  { path: "/about", label: "About" },
+  { path: "/contact", label: "Contact" },
+];
 
 const Header: React.FC = () => {
-    return (
-        <header className="header">
-            <h1 className="site-title">My Portfolio</h1>
-            <nav className="navigation">
-                <ul>
-                    <li><Link to="/">Home</Link></li>
-                    <li><Link to="/projects">Projects</Link></li>
-                    <li><Link to="/about">About</Link></li>
-                    <li><Link to="/contact">Contact</Link></li>
-                </ul>
-            </nav>
-        </header>
-    );
+  const location = useLocation();
+
+  return (
+    <header className="header">
+      <div className="header__inner container">
+        <Link to="/" className="header__brand">
+          Taliba Sadiq
+        </Link>
+        <nav className="header__nav" aria-label="Main navigation">
+          <ul className="header__list">
+            {navItems.map(({ path, label }) => (
+              <li key={path}>
+                <Link
+                  to={path}
+                  className={`header__link ${location.pathname === path ? "header__link--active" : ""}`}
+                >
+                  {label}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </nav>
+      </div>
+    </header>
+  );
 };
 
 export default Header;
