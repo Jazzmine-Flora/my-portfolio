@@ -4,6 +4,13 @@ import { GitHubIcon, LinkedInIcon } from "../components/SocialIcons";
 import profilePic from "../assets/profile.png";
 import "../styles/main.css";
 
+const skills = {
+  frontend: ["React", "TypeScript", "JavaScript", "HTML5", "CSS3", "SASS", "Webpack", "Responsive Design"],
+  backend: ["Node.js", "Express", "REST APIs", "MongoDB", "Mongoose", "Postman"],
+  tools: ["Git", "GitHub", "VS Code", "Figma", "Chrome DevTools", "npm/yarn"],
+  concepts: ["Component Architecture", "State Management", "API Integration", "Authentication", "Database Design"]
+};
+
 const HomePage: React.FC = () => (
   <div className="homepage page-content">
     <section className="hero">
@@ -18,10 +25,12 @@ const HomePage: React.FC = () => (
         <div className="hero__content">
           <p className="hero__greeting">Hi, I'm</p>
           <h1 className="hero__title">Taliba Sadiq</h1>
-          <p className="hero__tagline">Front-End Developer & Animator</p>
+          <p className="hero__tagline">Full-Stack Front-End Developer & Animator</p>
           <p className="hero__bio">
-            I build beautiful, user-friendly web experiences with React, TypeScript, and CSS.
-            Passionate about clean code and learning new things. Welcome to my portfolio.
+            I build beautiful, scalable web applications using React, TypeScript, and modern JavaScript.
+            With expertise spanning front-end architecture, API integration, and database design, I create
+            seamless user experiences from concept to deployment. Passionate about clean code, performance,
+            and continuous learning.
           </p>
           <div className="hero__actions">
             <Link to="/projects" className="btn btn--primary">
@@ -52,6 +61,49 @@ const HomePage: React.FC = () => (
               <LinkedInIcon className="hero__social-icon" title="LinkedIn" />
               <span>LinkedIn</span>
             </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section className="skills-showcase section">
+      <div className="container">
+        <h2 className="skills-showcase__title">Technical Skills</h2>
+        <p className="skills-showcase__lead">
+          A comprehensive toolkit for building modern web applications
+        </p>
+        <div className="skills-showcase__grid">
+          <div className="skill-category">
+            <h3 className="skill-category__title">Front-End</h3>
+            <div className="skill-category__tags">
+              {skills.frontend.map((skill) => (
+                <span key={skill} className="skill-tag">{skill}</span>
+              ))}
+            </div>
+          </div>
+          <div className="skill-category">
+            <h3 className="skill-category__title">Back-End</h3>
+            <div className="skill-category__tags">
+              {skills.backend.map((skill) => (
+                <span key={skill} className="skill-tag">{skill}</span>
+              ))}
+            </div>
+          </div>
+          <div className="skill-category">
+            <h3 className="skill-category__title">Tools & Workflow</h3>
+            <div className="skill-category__tags">
+              {skills.tools.map((skill) => (
+                <span key={skill} className="skill-tag">{skill}</span>
+              ))}
+            </div>
+          </div>
+          <div className="skill-category">
+            <h3 className="skill-category__title">Core Concepts</h3>
+            <div className="skill-category__tags">
+              {skills.concepts.map((skill) => (
+                <span key={skill} className="skill-tag">{skill}</span>
+              ))}
+            </div>
           </div>
         </div>
       </div>
