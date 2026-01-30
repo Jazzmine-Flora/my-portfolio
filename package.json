@@ -1,6 +1,6 @@
 {
   "name": "my-portfolio",
-  "homepage": "https://jazzmine-flora.github.io/my-portfolio",
+  "homepage": "https://jazzmine-flora.github.io",
   "version": "1.0.0",
   "description": "A personal portfolio website showcasing projects and skills.",
   "main": "src/index.tsx",
@@ -9,7 +9,7 @@
     "build": "webpack --mode production",
     "test": "jest",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "deploy": "gh-pages -d dist -r https://github.com/Jazzmine-Flora/Jazzmine-Flora.github.io.git -b main"
   },
   "keywords": [
     "portfolio",

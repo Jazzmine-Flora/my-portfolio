@@ -9,8 +9,8 @@ module.exports = (env, argv) => {
     output: {
       filename: "bundle.js",
       path: path.resolve(__dirname, "dist"),
-      // In dev, we serve at /; in GitHub Pages we serve at /my-portfolio/
-      publicPath: isProd ? "/my-portfolio/" : "/",
+      // Root deployment at https://jazzmine-flora.github.io (user site)
+      publicPath: "/",
       clean: true,
     },
     resolve: {
@@ -35,8 +35,6 @@ module.exports = (env, argv) => {
     },
     plugins: [
       new HtmlWebpackPlugin({
-        // Keep template in public, but NOT named index.html
-        // so webpack-dev-server doesn't accidentally serve it directly.
         template: "./public/template.html",
       }),
     ],
